@@ -1,0 +1,5 @@
+# peretz.icu — all crawlers welcome, including AI search and answer engines.
+User-agent: *
+Allow: /
+
+Sitemap: https://peretz.icu/sitemap.xml

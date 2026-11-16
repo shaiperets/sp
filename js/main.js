@@ -167,6 +167,7 @@
       gsap.from(".about__copy > *", { y: 30, opacity: 0, duration: 1, ease: "expo.out", stagger: 0.12, scrollTrigger: { trigger: ".about__copy", start: "top 80%", once: true } });
       [".about__video", ".about__desk"].forEach((s, i) => gsap.from(s, { y: 80, opacity: 0, duration: 1.4, ease: "expo.out", scrollTrigger: { trigger: s, start: "top 88%", once: true } }));
       gsap.to(".about__desk", { yPercent: -12, ease: "none", scrollTrigger: { trigger: ".about__grid", start: "top bottom", end: "bottom top", scrub: true } });
+      gsap.from(".faq__item", { y: 30, opacity: 0, duration: 0.9, ease: "expo.out", stagger: 0.07, scrollTrigger: { trigger: ".faq__list", start: "top 82%", once: true } });
       gsap.from(".cred__card", { y: 60, opacity: 0, duration: 1.1, ease: "expo.out", stagger: 0.09, scrollTrigger: { trigger: ".cred__grid", start: "top 80%", once: true } });
       gsap.to(".contact__title .line > span", { y: 0, duration: 1.3, ease: "expo.out", stagger: 0.12, scrollTrigger: { trigger: ".contact__title", start: "top 85%", once: true } });
       gsap.set(".contact__title .line > span", { y: "105%" });
