@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/shaiperets/sp/security/advisories/new
+    about: Please report security issues privately, not as public issues.
+  - name: Get in touch
+    url: https://linkedin.com/in/shai-peretz
+    about: For anything that is not about this repository, reach out on LinkedIn.

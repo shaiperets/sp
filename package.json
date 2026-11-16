@@ -1,0 +1,29 @@
+{
+  "name": "sp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal website of Shai Peretz, DevOps Manager. Static HTML, CSS and JavaScript.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaiperets/sp.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "npx --yes serve@14 -l 8080 .",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "lint:html": "htmlhint index.html",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint:js": "eslint js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^18.0.0",
+    "stylelint-config-recommended": "^19.0.0"
+  }
+}

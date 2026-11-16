@@ -1,0 +1,7 @@
+# LinkedIn blocks automated requests (HTTP 999)
+^https?://(www\.)?linkedin\.com/
+# Preconnect hosts, not real pages
+^https://fonts\.googleapis\.com/?$
+^https://fonts\.gstatic\.com/?$
+# This repo's own workflow pages and badges 404 until the workflow exists on main
+^https://github\.com/shaiperets/sp/actions/workflows/
