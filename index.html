@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shai Peretz — DevOps Manager</title>
+<meta name="description" content="Shai Peretz — DevOps Manager at Check Point. 10+ years in platform engineering, 5+ leading engineering teams. CI/CD, cloud platforms, AI tooling.">
+<meta name="theme-color" content="#0c0e0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__panel loader__panel--t"></div>
+  <div class="loader__panel loader__panel--b"></div>
+  <div class="loader__inner">
+    <pre class="loader__log mono" id="loaderLog"></pre>
+    <div class="loader__count"><span id="loaderNum">0</span><i>%</i></div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label mono"></span></div>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="nav__brand" data-cursor="home"><b>SP</b><span class="mono">/ platform</span></a>
+  <nav class="nav__links mono" aria-label="Sections">
+    <a href="#about" data-cursor="read"><i>01</i>About</a>
+    <a href="#experience" data-cursor="drag"><i>02</i>Experience</a>
+    <a href="#stack" data-cursor="play"><i>03</i>Stack</a>
+    <a href="#credentials"><i>04</i>Credentials</a>
+    <a href="#contact"><i>05</i>Contact</a>
+  </nav>
+  <div class="nav__status mono"><span class="dot"></span><span id="clock">Tel Aviv</span></div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true"><canvas id="heroCanvas"></canvas></div>
+
+  <div class="hero__meta mono">
+    <span><span class="dot"></span> Status: all systems green</span>
+    <span>Tel Aviv, IL</span>
+  </div>
+
+  <h1 class="hero__title" aria-label="Shai Peretz">
+    <span class="line"><span class="split">SHAI</span></span>
+    <span class="line line--indent"><span class="split">PERETZ</span></span>
+  </h1>
+
+  <figure class="hero__photo" id="heroPhoto" data-cursor="that's me">
+    <div class="duo"><img src="assets/shai-hero.jpg" alt="Portrait of Shai Peretz" width="1125" height="1500"></div>
+    <figcaption class="mono">fig.01 — the person the R&amp;D org calls</figcaption>
+  </figure>
+
+  <div class="hero__role">
+    <p class="hero__kicker mono">DevOps Manager</p>
+    <p class="hero__sub">Platform engineering &amp; cloud architecture. I lead the team that builds the pipelines, platforms and tooling a global R&amp;D organisation ships on.</p>
+  </div>
+
+  <div class="hero__stats mono">
+    <div><b data-count="10" data-suffix="+">10+</b><span>yrs platform eng.</span></div>
+    <div><b data-count="5" data-suffix="+">5+</b><span>yrs leading teams</span></div>
+    <div><b data-count="11">11</b><span>engineers led</span></div>
+  </div>
+
+  <a href="#about" class="hero__scroll mono" data-cursor="scroll">scroll <i></i></a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track mono">
+    <span>AWS</span><span>GCP</span><span>Kubernetes</span><span>Terraform</span><span>Terragrunt</span><span>GitHub Actions</span><span>Helm</span><span>Jenkins</span><span>GitOps</span><span>MCP servers</span><span>Python</span><span>Ansible</span>
+    <span>AWS</span><span>GCP</span><span>Kubernetes</span><span>Terraform</span><span>Terragrunt</span><span>GitHub Actions</span><span>Helm</span><span>Jenkins</span><span>GitOps</span><span>MCP servers</span><span>Python</span><span>Ansible</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="sec-label mono"><i>01</i> About</div>
+
+  <p class="about__statement" id="statement">
+    I translate complex infrastructure challenges into scalable solutions — and I'm the person the R&amp;D org calls when things get hard.
+  </p>
+
+  <div class="about__grid">
+    <figure class="about__video" data-cursor="play">
+      <video id="reel" muted loop playsinline preload="metadata" poster="assets/reel-poster.jpg">
+        <source src="assets/reel.mp4" type="video/mp4">
+      </video>
+      <figcaption class="mono"><span class="rec"></span> reel.mp4</figcaption>
+    </figure>
+
+    <div class="about__copy">
+      <p>Ten-plus years in platform engineering, five-plus leading engineering teams. At <b>Check Point</b> I lead an 11-engineer team building CI/CD infrastructure, cloud platforms and custom applications for a large, global R&amp;D organisation.</p>
+      <p>I came up through the stack — civil engineering, then support, test automation, Java backend, and DevOps — so I read a problem from the user's ticket down to the Terraform plan. Today that range lets me manage cross-functional initiatives across many engineering teams and still get into the code.</p>
+      <p>Right now I'm spearheading AI tooling adoption for R&amp;D productivity, including research and integration of <b>MCP servers</b> into engineering workflows.</p>
+      <ul class="about__facts mono">
+        <li><span>Role</span>DevOps Manager, Check Point</li>
+        <li><span>Focus</span>CI/CD · Cloud · AI tooling</li>
+        <li><span>Based</span>Tel Aviv · Hybrid</li>
+        <li><span>Certified</span>AWS Solutions Architect · Cloud Developer</li>
+      </ul>
+    </div>
+
+    <figure class="about__desk" data-cursor="my desk">
+      <div class="duo duo--soft"><img src="assets/shai-desk.jpg" alt="Shai Peretz at his desk with a terminal on screen" loading="lazy" width="1125" height="1500"></div>
+      <figcaption class="mono">fig.02 — terminal open, as usual</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="exp" id="experience">
+  <div class="exp__pin">
+    <header class="exp__head">
+      <div class="sec-label mono"><i>02</i> Experience</div>
+      <h2 class="exp__title">The <em>git log</em> of a career</h2>
+      <p class="exp__hint mono">scroll → deploys 2009 → now</p>
+    </header>
+
+    <div class="exp__rail" aria-hidden="true"><i id="railFill"></i><span id="railLabel" class="mono">2009</span></div>
+
+    <div class="exp__track" id="track">
+
+      <article class="card" data-viz="tiers">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2009 – 2012 · Tel Aviv</p>
+          <h3>Tier 3 Support TL</h3>
+          <p class="card__co">Odoro Inc.</p>
+          <ul>
+            <li>Tier 3 technical support for web systems across multiple platforms; wrote STP and STR documentation.</li>
+            <li>Managed a team of support engineers to deliver the best customer onboarding experience.</li>
+            <li>Authored C# automation and test frameworks; administered Windows and Linux servers and SQL databases.</li>
+          </ul>
+          <p class="card__tech mono">C# · .NET · SQL · Windows · Linux</p>
+        </div>
+      </article>
+
+      <article class="card" data-viz="load">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2012 – 2015 · Israel</p>
+          <h3>Software Engineer – Automation (US)</h3>
+          <p class="card__co">Pitney Bowes</p>
+          <ul>
+            <li>Built system and integration test suites from scratch in Java, Scala, Groovy and Selenium.</li>
+            <li>Managed CI/CD pipelines in Jenkins and TeamCity using Gradle and Spring.</li>
+            <li>Developed load and stress simulation tools with Gatling and JMeter.</li>
+          </ul>
+          <p class="card__tech mono">Java · Scala · Groovy · Selenium · Jenkins · TeamCity · JMeter · Gatling</p>
+        </div>
+      </article>
+
+      <article class="card" data-viz="data">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2015 – 2017 · Tel Aviv</p>
+          <h3>Java Software Engineer</h3>
+          <p class="card__co">Matomy</p>
+          <ul>
+            <li>Designed scalable Java/Spring backend services: RESTful APIs and async pipelines for high-volume ad-tech data flows.</li>
+            <li>Built automation frameworks and CI/CD with Docker and Jenkins.</li>
+            <li>Integrated Airflow, Flink, Presto and Hive into production workflows.</li>
+          </ul>
+          <p class="card__tech mono">Java · Spring · Docker · Jenkins · Airflow · Flink · Presto · Hive</p>
+        </div>
+      </article>
+
+      <article class="card" data-viz="ha">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2017 – 2020 · Tel Aviv</p>
+          <h3>Senior DevOps Engineer</h3>
+          <p class="card__co">Radware</p>
+          <ul>
+            <li>Maintained and improved production and development environments.</li>
+            <li>Architected Terraform infrastructure and Kubernetes clusters for high-availability deployments.</li>
+            <li>Built and ran Jenkins CI/CD pipelines and Bash automation; supported development and ML teams.</li>
+          </ul>
+          <p class="card__tech mono">AWS · Kubernetes · Terraform · Jenkins · Docker · Bash · Python</p>
+        </div>
+      </article>
+
+      <article class="card" data-viz="k8s">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2020 – 2021 · Tel Aviv · Hybrid</p>
+          <h3>Senior DevOps Engineer</h3>
+          <p class="card__co">Palo Alto Networks</p>
+          <ul>
+            <li>Architected Terraform (with Terragrunt) infrastructure and K8s clusters for R&amp;D and production.</li>
+            <li>Designed and optimised AWS-backed CI/CD pipelines.</li>
+            <li>Supported ML/AI teams; built adaptive Python/Groovy/Bash automation to speed up developer workflows.</li>
+          </ul>
+          <p class="card__tech mono">AWS · GCP · EKS · GKE · Helm · Terraform · Jenkins · Ansible · Python</p>
+        </div>
+      </article>
+
+      <article class="card" data-viz="gitops">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono">2021 – 2023 · Tel Aviv</p>
+          <h3>DevOps Team Lead</h3>
+          <p class="card__co">Perimeter 81</p>
+          <ul>
+            <li>Oversaw infrastructure architecture; drove technical decisions for scalability, security and operational efficiency.</li>
+            <li>Principal technical advisor to R&amp;D; pioneered GitOps methodologies and shaped the long-term technology roadmap.</li>
+            <li>Continuously drove improvements in platform performance, reliability and automation.</li>
+          </ul>
+          <p class="card__tech mono">AWS · GCP · GKE · EKS · Helm · Terraform · Jenkins · TeamCity · Ansible · GitLab</p>
+        </div>
+      </article>
+
+      <article class="card card--now" data-viz="team">
+        <div class="card__viz"></div>
+        <div class="card__body">
+          <p class="card__years mono"><span class="dot"></span> 2023 – Present · Tel Aviv · Hybrid</p>
+          <h3>DevOps Manager</h3>
+          <p class="card__co">Check Point Software Technologies</p>
+          <ul>
+            <li>Lead a team of <b>11 engineers</b> on large-scale innovation projects, managing cross-functional initiatives across R&amp;D engineering teams.</li>
+            <li>Design, implement and continuously optimise CI/CD pipelines and infrastructure for scalable, high-performance R&amp;D systems.</li>
+            <li>Spearhead large-scale AI tooling adoption, including integrating <b>MCP servers</b> into engineering workflows.</li>
+            <li>Primary technical focal point for R&amp;D — resolving complex engineering challenges and keeping the platform running.</li>
+          </ul>
+          <p class="card__tech mono">AWS · GitHub Actions · Kubernetes · Terraform · Terragrunt · Python · Node.js</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="stack" id="stack">
+  <div class="stack__head">
+    <div class="sec-label mono"><i>03</i> Stack</div>
+    <h2 class="stack__title">Tools I <em>reach for</em></h2>
+    <p class="stack__lede">Move your cursor through the field. Filter by domain.</p>
+    <div class="chips mono" id="chips" role="group" aria-label="Filter skills">
+      <button class="chip is-on" data-cat="all">All</button>
+      <button class="chip" data-cat="cloud">Cloud &amp; Infra</button>
+      <button class="chip" data-cat="cicd">CI/CD &amp; Automation</button>
+      <button class="chip" data-cat="lang">Languages</button>
+      <button class="chip" data-cat="data">Data</button>
+    </div>
+  </div>
+  <div class="stack__field" id="field">
+    <canvas id="skillCanvas" aria-label="Interactive skills constellation"></canvas>
+    <div class="stack__tip mono" id="tip"></div>
+  </div>
+  <ul class="sr-only" id="skillList"></ul>
+</section>
+
+<!-- NUMBERS -->
+<section class="nums">
+  <div class="nums__row">
+    <div><b data-count="11">11</b><span class="mono">engineers on my team</span></div>
+    <div><b data-count="7">7</b><span class="mono">companies, one through-line</span></div>
+    <div><b data-count="2">2</b><span class="mono">AWS certifications</span></div>
+    <div><b data-count="17" data-prefix="">17</b><span class="mono">years in tech since 2009</span></div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="cred" id="credentials">
+  <div class="sec-label mono"><i>04</i> Credentials</div>
+  <div class="cred__grid">
+    <article class="cred__card cred__card--lg" data-cursor="verified">
+      <p class="mono">AWS · Sep 2021</p>
+      <h3>Certified Solutions Architect</h3>
+      <svg class="seal" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="M24 41l11 11 21-24"/></svg>
+    </article>
+    <article class="cred__card" data-cursor="verified">
+      <p class="mono">AWS · Dec 2022</p>
+      <h3>Certified Cloud Developer</h3>
+    </article>
+    <article class="cred__card">
+      <p class="mono">2004 – 2008</p>
+      <h3>Engineer's Degree, Civil Engineering</h3>
+      <p class="cred__sub">Tel-Hai University, Kiryat Shmona · National Excellence Award</p>
+    </article>
+    <article class="cred__card">
+      <p class="mono">2014 – 2016</p>
+      <h3>MCSD, Computer Programming</h3>
+      <p class="cred__sub">Sela College</p>
+    </article>
+    <article class="cred__card cred__card--wide">
+      <p class="mono">Volunteering · Perach Big Brother Program</p>
+      <h3>Mentor</h3>
+      <p class="cred__sub">Mentored a child over two semesters, supporting academic development and personal growth. Awarded the National and Regional Excellence Award on completion.</p>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="sec-label mono"><i>05</i> Contact</div>
+  <h2 class="contact__title"><span class="line"><span>Let's build</span></span><span class="line"><span>something <em>reliable.</em></span></span></h2>
+
+  <div class="contact__row">
+    <a class="magnet" href="mailto:shaiperets@me.com" data-cursor="write">
+      <span class="mono">Email</span>
+      <b>shaiperets@me.com</b>
+    </a>
+    <a class="magnet" href="https://linkedin.com/in/shai-peretz" target="_blank" rel="noopener" data-cursor="open">
+      <span class="mono">LinkedIn</span>
+      <b>/in/shai-peretz</b>
+    </a>
+  </div>
+
+  <div class="term" id="term">
+    <div class="term__bar mono"><i></i><i></i><i></i><span>shai@platform — zsh</span></div>
+    <div class="term__body mono" id="termBody" aria-live="polite"></div>
+    <label class="term__input mono"><span>$</span><input id="termInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type: help" aria-label="Terminal command"></label>
+  </div>
+
+  <footer class="foot mono">
+    <span>© <span id="yr">2026</span> Shai Peretz</span>
+    <span>Built for speed · 60fps · <button id="motionBtn" class="linkbtn">reduce motion</button></span>
+    <a href="#top" data-cursor="up">back to top ↑</a>
+  </footer>
+</section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/constellation.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
