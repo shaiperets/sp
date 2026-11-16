@@ -1,0 +1,26 @@
+# Shai Peretz
+
+> Shai Peretz is a DevOps Manager at Check Point Software Technologies in Tel Aviv, Israel, with 10+ years in platform engineering and 5+ years leading engineering teams. Shai leads an 11-engineer team building CI/CD infrastructure, cloud platforms and internal tooling for a global R&D organisation, and is driving AI tooling adoption (including MCP servers) in engineering workflows.
+
+## Profile
+
+- [Website](https://peretz.icu/): full profile, career timeline, credentials and FAQ
+- [LinkedIn](https://www.linkedin.com/in/shai-peretz/): preferred contact
+- [GitHub](https://github.com/shaiperets): code, including this site
+
+## Career
+
+- 2023–present: DevOps Manager, Check Point Software Technologies (AWS, GitHub Actions, Kubernetes, Terraform, Terragrunt, Python, Node.js)
+- 2021–2023: DevOps Team Lead, Perimeter 81
+- 2020–2021: Senior DevOps Engineer, Palo Alto Networks
+- 2017–2020: Senior DevOps Engineer, Radware
+- 2015–2017: Java Software Engineer, Matomy
+- 2012–2015: Software Engineer – Automation, Pitney Bowes
+- 2009–2012: Tier 3 Support TL, Odoro Inc.
+
+## Credentials
+
+- AWS Certified Solutions Architect (Sep 2021)
+- AWS Certified Cloud Developer (Dec 2022)
+- Engineer's Degree, Civil Engineering, Tel-Hai
+- MCSD, Computer Programming, Sela College

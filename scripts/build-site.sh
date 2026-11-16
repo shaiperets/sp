@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 rm -rf _site
 mkdir -p _site
-cp index.html _site/
+cp index.html robots.txt sitemap.xml llms.txt favicon.ico _site/
 cp -R css js assets _site/
 touch _site/.nojekyll
 echo "Site assembled in _site/ ($(du -sh _site | cut -f1))"
