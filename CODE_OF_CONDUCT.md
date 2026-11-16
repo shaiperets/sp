@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the project maintainer, [@shaiperets](https://github.com/shaiperets),
-by direct message on [LinkedIn](https://linkedin.com/in/shai-peretz).
+by direct message on [LinkedIn](https://linkedin.com/in/shaiperets).
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
