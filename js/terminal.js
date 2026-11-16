@@ -11,7 +11,7 @@
     exp: "2023–now   DevOps Manager ........ Check Point\n2021–2023  DevOps Team Lead ...... Perimeter 81\n2020–2021  Sr DevOps Engineer .... Palo Alto Networks\n2017–2020  Sr DevOps Engineer .... Radware\n2015–2017  Java Software Eng. .... Matomy\n2012–2015  Software Eng. – Auto .. Pitney Bowes\n2009–2012  Tier 3 Support TL ..... Odoro Inc.",
     skills: "cloud    AWS GCP Kubernetes Docker Terraform Terragrunt Helm Lambda EKS GKE\ncicd     GitHub Actions · TeamCity · Jenkins · Ansible · GitOps · Bash\nlang     Python Bash Java JavaScript/Node.js C#\ndata     Airflow Flink Presto Hive SageMaker Redshift MongoDB MySQL SQL",
     certs: "AWS Certified Solutions Architect ........ Sep 2021\nAWS Certified Cloud Developer ............ Dec 2022\nMCSD, Computer Programming — Sela College  2014–2016\nEng. Degree, Civil Engineering — Tel-Hai   2004–2008",
-    contact: "email     shaiperets@me.com\nlinkedin  linkedin.com/in/shai-peretz",
+    contact: "linkedin  linkedin.com/in/shai-peretz\n› the fastest way to reach me is a LinkedIn message",
   };
   OUT.ls = OUT.help; OUT["?"] = OUT.help; OUT.experience = OUT.exp; OUT.stack = OUT.skills;
 
