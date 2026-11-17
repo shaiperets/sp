@@ -5,7 +5,7 @@
 ## Profile
 
 - [Website](https://peretz.icu/): full profile, career timeline, credentials and FAQ
-- [LinkedIn](https://www.linkedin.com/in/shai-peretz/): preferred contact
+- [LinkedIn](https://www.linkedin.com/in/shaiperets/): preferred contact
 - [GitHub](https://github.com/shaiperets): code, including this site
 
 ## Career
