@@ -145,6 +145,10 @@ Tracked events, set with `data-umami-event` attributes (no extra JavaScript):
 | `contact-linkedin` | the LinkedIn link in Contact is clicked |
 | `contact-github` | the GitHub link in Contact is clicked |
 | `faq-toggle` | a FAQ item is opened or closed (property `question`, e.g. `Q.03`) |
+| `cv-visit` | someone opens a per-application link, `?r=<code>` (properties `application`, `source`) |
+| `section-view` | a section reaches the middle of the screen, once per visit (property `section`, plus `application` when known) |
+
+**Per-application links** (`js/track.js`): put a unique link on each CV or application, e.g. `https://peretz.icu/?r=acme-cv`. The code is attached to the whole Umami session (`umami.identify`), so in Umami you can filter by `application` to see when that visit happened, the country and device, how far the visitor read (`section-view`) and whether they clicked LinkedIn or GitHub. Use lowercase letters, digits, `-`, `_` or `.` in codes.
 
 Tag links you share with UTM parameters, e.g. `https://peretz.icu/?utm_source=linkedin&utm_campaign=profile`, to see where visits come from. [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) is also loaded (beacon in `index.html`, also cookieless) as a cross-check on visit counts. It has no click events.
 
