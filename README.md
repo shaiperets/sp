@@ -146,7 +146,7 @@ Tracked events, set with `data-umami-event` attributes (no extra JavaScript):
 | `contact-github` | the GitHub link in Contact is clicked |
 | `faq-toggle` | a FAQ item is opened or closed (property `question`, e.g. `Q.03`) |
 
-Tag links you share with UTM parameters, e.g. `https://peretz.icu/?utm_source=linkedin&utm_campaign=profile`, to see where visits come from. Cloudflare Web Analytics is enabled on the zone as a code-free cross-check.
+Tag links you share with UTM parameters, e.g. `https://peretz.icu/?utm_source=linkedin&utm_campaign=profile`, to see where visits come from. [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) is also loaded (beacon in `index.html`, also cookieless) as a cross-check on visit counts. It has no click events.
 
 ## Development workflow
 
