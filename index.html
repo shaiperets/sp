@@ -514,27 +514,27 @@
   </div>
   <div class="faq__list">
     <details class="faq__item" open>
-      <summary><span class="faq__n mono">Q.01</span><h3 class="faq__q">Who is Shai Peretz?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.01"><span class="faq__n mono">Q.01</span><h3 class="faq__q">Who is Shai Peretz?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">Shai Peretz is a DevOps Manager at Check Point Software Technologies in Tel Aviv, Israel. With more than ten years in platform engineering and five-plus years leading engineering teams, Shai heads an 11-engineer team that builds the CI/CD infrastructure, cloud platforms and internal tooling a global R&amp;D organisation ships on.</p>
     </details>
     <details class="faq__item">
-      <summary><span class="faq__n mono">Q.02</span><h3 class="faq__q">What does Shai’s team at Check Point build?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.02"><span class="faq__n mono">Q.02</span><h3 class="faq__q">What does Shai’s team at Check Point build?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">CI/CD pipelines on GitHub Actions, cloud platforms on AWS with Kubernetes, Terraform and Terragrunt, and custom internal applications in Python and Node.js. All of it so a large, global R&amp;D organisation can build, test and release on one shared platform.</p>
     </details>
     <details class="faq__item">
-      <summary><span class="faq__n mono">Q.03</span><h3 class="faq__q">Which cloud and DevOps tools does Shai Peretz work with?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.03"><span class="faq__n mono">Q.03</span><h3 class="faq__q">Which cloud and DevOps tools does Shai Peretz work with?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">AWS and GCP, Kubernetes (EKS and GKE), Terraform, Terragrunt, Helm, GitHub Actions, Jenkins, TeamCity, Ansible, Docker, Python and Node.js, plus MCP servers for AI-assisted engineering workflows.</p>
     </details>
     <details class="faq__item">
-      <summary><span class="faq__n mono">Q.04</span><h3 class="faq__q">What certifications does Shai Peretz hold?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.04"><span class="faq__n mono">Q.04</span><h3 class="faq__q">What certifications does Shai Peretz hold?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">AWS Certified Solutions Architect (September 2021) and AWS Certified Cloud Developer (December 2022). Shai also holds an Engineer’s Degree in Civil Engineering from Tel-Hai and an MCSD in Computer Programming from Sela College.</p>
     </details>
     <details class="faq__item">
-      <summary><span class="faq__n mono">Q.05</span><h3 class="faq__q">How is Shai using AI in engineering?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.05"><span class="faq__n mono">Q.05</span><h3 class="faq__q">How is Shai using AI in engineering?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">By leading AI tooling adoption for R&amp;D productivity at Check Point, including research into and integration of Model Context Protocol (MCP) servers in day-to-day engineering workflows.</p>
     </details>
     <details class="faq__item">
-      <summary><span class="faq__n mono">Q.06</span><h3 class="faq__q">How can I contact Shai Peretz?</h3><i class="faq__x" aria-hidden="true"></i></summary>
+      <summary data-umami-event="faq-toggle" data-umami-event-question="Q.06"><span class="faq__n mono">Q.06</span><h3 class="faq__q">How can I contact Shai Peretz?</h3><i class="faq__x" aria-hidden="true"></i></summary>
       <p class="faq__a">The fastest way is a LinkedIn message at linkedin.com/in/shaiperets. Shai is based in Tel Aviv and works hybrid.</p>
     </details>
   </div>
@@ -546,11 +546,11 @@
   <h2 class="contact__title"><span class="line"><span>Let's build</span></span><span class="line"><span>something <em>reliable.</em></span></span></h2>
 
   <div class="contact__row">
-    <a class="magnet" href="https://www.linkedin.com/in/shaiperets/" target="_blank" rel="noopener me" data-cursor="open">
+    <a class="magnet" href="https://www.linkedin.com/in/shaiperets/" target="_blank" rel="noopener me" data-cursor="open" data-umami-event="contact-linkedin">
       <span class="mono">LinkedIn · message me there</span>
       <b>/in/shaiperets</b>
     </a>
-    <a class="magnet" href="https://github.com/shaiperets" target="_blank" rel="noopener me" data-cursor="open">
+    <a class="magnet" href="https://github.com/shaiperets" target="_blank" rel="noopener me" data-cursor="open" data-umami-event="contact-github">
       <span class="mono">GitHub · the code behind this site</span>
       <b>/shaiperets</b>
     </a>
@@ -563,7 +563,7 @@
   </div>
 
   <footer class="foot mono">
-    <span>© <span id="yr">2026</span> Shai Peretz</span>
+    <span>© <span id="yr">2026</span> Shai Peretz · no cookies, anonymous visit stats</span>
     <span>Built for speed · 60fps · <button id="motionBtn" class="linkbtn">reduce motion</button></span>
     <a href="#top" data-cursor="up">back to top ↑</a>
   </footer>
@@ -578,5 +578,7 @@
 <script src="js/constellation.js"></script>
 <script src="js/terminal.js"></script>
 <script src="js/main.js"></script>
+<!-- Privacy-friendly analytics: cookieless, no personal data. Counts only on the live domain. -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="UMAMI_WEBSITE_ID" data-domains="peretz.icu" data-do-not-track="true"></script>
 </body>
 </html>
