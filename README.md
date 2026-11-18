@@ -23,6 +23,7 @@ Platform engineering, CI/CD and cloud architecture, told as an interactive one-p
 - [Project structure](#project-structure)
 - [Quality gates](#quality-gates)
 - [Deployment](#deployment)
+- [Analytics](#analytics)
 - [Development workflow](#development-workflow)
 - [Security](#security)
 - [License](#license)
@@ -132,6 +133,20 @@ Pushing to `main` deploys automatically through [`.github/workflows/pages.yml`](
 2. The artifact is uploaded and deployed to GitHub Pages in the `github-pages` environment.
 
 One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**. The site is then served at `https://shaiperets.github.io/sp/`, or on a custom domain if one is configured.
+
+## Analytics
+
+Visits are counted with [Umami Cloud](https://umami.is): cookieless, no personal data, so no consent banner is needed. The script in `index.html` only reports on `peretz.icu` (`data-domains`), so local previews and the github.io mirror are not counted, and it honours Do Not Track.
+
+Tracked events, set with `data-umami-event` attributes (no extra JavaScript):
+
+| Event | Fires when |
+|---|---|
+| `contact-linkedin` | the LinkedIn link in Contact is clicked |
+| `contact-github` | the GitHub link in Contact is clicked |
+| `faq-toggle` | a FAQ item is opened or closed (property `question`, e.g. `Q.03`) |
+
+Tag links you share with UTM parameters, e.g. `https://peretz.icu/?utm_source=linkedin&utm_campaign=profile`, to see where visits come from. Cloudflare Web Analytics is enabled on the zone as a code-free cross-check.
 
 ## Development workflow
 
