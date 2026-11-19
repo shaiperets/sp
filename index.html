@@ -260,7 +260,11 @@
   </h1>
 
   <figure class="hero__photo" id="heroPhoto" data-cursor="that's me">
-    <div class="duo"><img src="assets/shai-hero.jpg" alt="Portrait of Shai Peretz" width="1125" height="1500"></div>
+    <div class="duo"><picture>
+      <source type="image/avif" srcset="assets/shai-hero-480.avif 480w, assets/shai-hero.avif 680w" sizes="(max-width: 860px) 45vw, 26rem">
+      <source type="image/webp" srcset="assets/shai-hero-480.webp 480w, assets/shai-hero.webp 680w" sizes="(max-width: 860px) 45vw, 26rem">
+      <img src="assets/shai-hero.jpg" alt="Portrait of Shai Peretz in a black t-shirt" width="680" height="907" fetchpriority="high">
+    </picture></div>
     <figcaption class="mono">fig.01 — the person the R&amp;D org calls</figcaption>
   </figure>
 
