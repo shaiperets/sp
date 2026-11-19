@@ -317,9 +317,14 @@
       </ul>
     </div>
 
-    <figure class="about__desk" data-cursor="my desk">
-      <div class="duo duo--soft"><img src="assets/shai-desk.jpg" alt="Shai Peretz at his desk with a terminal on screen" loading="lazy" width="1125" height="1500"></div>
-      <figcaption class="mono">fig.02 — terminal open, as usual</figcaption>
+    <figure class="about__desk pipe" data-cursor="push">
+      <button class="pipe__stage" id="pipe" type="button" aria-label="CI/CD pipeline animation: commits loop through build, test, release, deploy and monitor. Press to push a commit.">
+        <svg class="pipe__fallback" viewBox="0 0 300 400" aria-hidden="true"><path d="M150 200C210 140 236 70 150 70S90 140 150 200 236 330 150 330 90 260 150 200Z"/><circle cx="96" cy="128" r="9"/><circle cx="150" cy="70" r="9"/><circle cx="204" cy="128" r="9"/><circle cx="96" cy="272" r="9"/><circle cx="150" cy="330" r="9"/><circle cx="204" cy="272" r="9"/></svg>
+        <canvas id="pipeCanvas" aria-hidden="true"></canvas>
+        <span class="pipe__hud mono" aria-hidden="true"><span><i class="pipe__dot"></i>main</span><span>ci ↻ cd</span></span>
+        <span class="pipe__run mono" id="pipeRun" aria-hidden="true">run #1 · queued</span>
+      </button>
+      <figcaption class="mono">fig.02 — commit → prod, on a loop</figcaption>
     </figure>
   </div>
 </section>
@@ -582,6 +587,7 @@
 <script src="js/constellation.js"></script>
 <script src="js/terminal.js"></script>
 <script src="js/main.js"></script>
+<script src="js/pipeline.js"></script>
 <script src="js/track.js"></script>
 <!-- Privacy-friendly analytics: cookieless, no personal data. Umami counts only on the live domain. -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="3db550c4-9485-4a7f-aee4-b8f87ea27f60" data-domains="peretz.icu" data-do-not-track="true"></script>
