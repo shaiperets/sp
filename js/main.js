@@ -188,7 +188,7 @@
     mm.add("(min-width: 861px)", () => {
       if (isReduced()) return;
       const track = $("#track"), fill = $("#railFill"), label = $("#railLabel");
-      const years = ["2009", "2012", "2015", "2017", "2020", "2021", "2023 → now"];
+      const years = ["2023 → now", "2021", "2020", "2017", "2015", "2012", "2009"];
       const dist = () => Math.max(0, track.scrollWidth - innerWidth + parseFloat(getComputedStyle(track).paddingLeft));
       const cards = $$(".card");
       const hz = gsap.to(track, { x: () => -dist(), ease: "none", scrollTrigger: {
