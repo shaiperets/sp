@@ -145,8 +145,11 @@ Tracked events, set with `data-umami-event` attributes (no extra JavaScript):
 | `contact-linkedin` | the LinkedIn link in Contact is clicked |
 | `contact-github` | the GitHub link in Contact is clicked |
 | `faq-toggle` | a FAQ item is opened or closed (property `question`, e.g. `Q.03`) |
+| `visit-source` | once per visit: `source` is `linkedin`, `cv-pdf`, `ai-search`, `search`, `referral` or `direct` (plus `referrer` host and `application` when known); also set as a session property |
 | `cv-visit` | someone opens a per-application link, `?r=<code>` (properties `application`, `source`) |
 | `section-view` | a section reaches the middle of the screen, once per visit (property `section`, plus `application` when known) |
+
+**Links to use:** on the LinkedIn profile, `https://peretz.icu/?utm_source=linkedin` (visits with a linkedin.com or lnkd.in referrer count as `linkedin` too). In the PDF CV, `https://peretz.icu/?r=cv-pdf`, or a per-application code below, which also counts as `cv-pdf`.
 
 **Per-application links** (`js/track.js`): put a unique link on each CV or application, e.g. `https://peretz.icu/?r=acme-cv`. The code is attached to the whole Umami session (`umami.identify`), so in Umami you can filter by `application` to see when that visit happened, the country and device, how far the visitor read (`section-view`) and whether they clicked LinkedIn or GitHub. Use lowercase letters, digits, `-`, `_` or `.` in codes.
 
